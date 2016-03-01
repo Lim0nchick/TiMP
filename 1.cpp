@@ -12,8 +12,8 @@ int main (int argc, char *argv[]){
 	
 	if (f1 == 0 || f2 == 0) {
 		cout << "Error";
-		fclose (f1);
-		fclose (f2);
+		if (!f2) fclose (f1);
+		if (!f1) fclose (f2);
 		return 1;
 	}
 	
