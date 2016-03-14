@@ -1,4 +1,4 @@
-#include <string.h>
+#include <сstring>
 #include <iostream>
 
 using namespace std;
