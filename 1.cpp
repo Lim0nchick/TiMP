@@ -23,7 +23,6 @@ int main (int argc, char *argv[]){
 		
 		fgets (str1, 255, f1);
 		if (str1[strlen(str1) - 1] == '\n') str1[strlen(str1) - 1] = '\0';
-		//cout << str1 << endl; 
 		
 		fseek(f2, 0, SEEK_SET);
 		while (!feof (f2)){
@@ -32,7 +31,6 @@ int main (int argc, char *argv[]){
 		
 			fgets (str2, 255, f2);
 			if (str2[strlen(str2) - 1] == '\n') str2[strlen(str2) - 1] = '\0';		
-			//cout << "From f2-> " << str2 << endl;
 			
 			if (!strcmp(str1, str2)) {
 				flag = 0;
