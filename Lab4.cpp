@@ -6,7 +6,7 @@ class Error{
 		Error(std::string str){
 	 		inf = str;
 		}
-		what(){
+		void what(){
 			std::cout << inf << '\n';
 		} 
 		~Error(){
